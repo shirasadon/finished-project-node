@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add book interface</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>add new book interface</h1>
+    <h3>Hello manager is insert new book. enjoy!</h3>
+
+    <form id="insert-book-form">
+        <label for="">book title</label>
+        <input type="text" data-role="title" id="bookTitle" autocomplete="off" placeholder="insert new book..."><br>
+        <label for="">description</label>
+        <input type="text" data-role="description" id="bookDescription" autocomplete="off"
+            placeholder="insert book description..."><br>
+        <label for="">price</label>
+        <input type="number" data-role="price" id="bookPrice" autocomplete="off"><br>
+        <input type="submit" value="Add book">
+        <div class="TheDiv" data-role="books">The Books</div>
+        <div class="TheDiv" data-role="book">the book By Id</div>
+
+    </form>
+    <input class="btn" data-role="getAllBooks" type="button" value="get all books" />
+    <input class="btn" data-role="getBook" type="button" value="get book" />
+    <input class="btn" data-role="updateBook" type="button" value="update book" />
+    <input class="btn" data-role="deleteBook" type="button" value="delete book" />
+    <input data-role="dataIdInformation" type="text" placeholder="the Id" />
+
+
+    <script src="book.js"></script>
+</body>
+
+</html>
